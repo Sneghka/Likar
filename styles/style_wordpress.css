@@ -1,0 +1,40 @@
+
+h1 {
+    color: #212121;
+    font: bold 30px/30px Ubuntu;
+}
+h2 {
+    color: #212121;
+    font: 30px/30px Ubuntu;
+}
+h3 {
+    color: #212121;
+    font: 26px/28px Ubuntu;
+}
+h4 {
+    color: #292929;
+    font: bold 21px/26px Ubuntu;
+}
+h5 {
+    color: #292929;
+    font: bold 14px/20px Ubuntu;
+}
+h6 {
+    color: #333333;
+    font: 12px/18px Arial,Helvetica,sans-serif;
+}
+body {
+    font-weight: normal;
+}
+.logo_h__txt, .logo_link {
+    color: #313131;
+    font: bold 40px/40px Ubuntu;
+}
+.sf-menu > li > a {
+    color: #303336;
+    font: bold 14px/20px Archivo Narrow;
+}
+.nav.footer-nav a {
+    color: #343434;
+    font: bold 14px/20px Ubuntu;
+}
