@@ -1,0 +1,46 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                <p class="title">Copyright</p>
+                <p class="name">Holbern</p>
+                <p class="prev">© <em id="copyright-year">2016</em> <a href="index-5.html">Privacy Policy</a></p>
+                <ul class="follow_icon2">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-rss"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <p class="title">About Us</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquiex modo consequat.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <p class="title">Contact Us</p>
+                <ul class="list1">
+                    <li>
+                        <figure><img src="img/foo_icon1.png" alt=""></figure>
+                        <div class="extra-wrap">
+                            <p>Freephone:  +1 800 559 6580</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/foo_icon2.png" alt=""></figure>
+                        <div class="extra-wrap">
+                            <a href="#">contact@demolink.org</a>
+                        </div>
+                        </li>
+                    <li>
+                        <figure><img src="img/foo_icon3.png" alt=""></figure>
+                        <div class="extra-wrap">
+                            <p>9870 St Vincent Place,<br>Los Angeles, DC 45 Fr 45.<br>United States of America</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>

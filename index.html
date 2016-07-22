@@ -1,473 +1,199 @@
 <!Doctype html>
-<html class=" js flexbox flexboxlegacy canvas canvastext draganddrop rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions generatedcontent video audio localstorage csstransforms no-csstransforms3d" lang="en-US" style="">
+<html class="">
 
 <head>
-    <title>Likar | </title>
-    <meta content=" | " name="description">
+    <title>Likar</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Likar</title>
 
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-   
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/style_wordpress.css" rel="stylesheet">
-     <link href="styles/main.css" rel="stylesheet">
-     <link href="styles/responsive.css">
 
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/camera.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <link href="img/logo.png">
+
+    <script src="js/camera.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
-<body class="home page page-id-203 page-template page-template-page-home-php">
-
-    <div class="main-holder">
-        <header class="header">
+<body>
+    <header class="clearfix">      
+        <nav id="stuck_container" class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
             <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <div class="row">
-                            <div class="span12 hidden-phone"></div>
-                            <div class="span4">
-                                <div class="logo">
-                                    <a href="" class="logo_h logo_h__img">
-                                        <img src="images/logo.png" alt="Likar" title="">
-                                    </a>
-                                    <p class="logo_tagline"></p>
-                                </div>
+               <!-- <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>-->
+                <ul class="nav sf-menu clearfix sf-js-enabled sf-arrows">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="sub-menu"><a href="index-1.html" class="sf-with-ul">About us</a><span></span>
+                        <ul class="submenu sub-menu" style="display: none;">
+                            <li><a href="#">history</a></li>
+                            <li class=""><a href="#" class="sf-with-ul">news</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu sub-menu" style="display: none;">
+                                    <li><a href="#">latest</a></li>
+                                    <li><a href="#">archive</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index-2.html">eye care</a></li>
+                    <li><a href="index-3.html">Eyewear products</a></li>
+                    <li><a href="index-4.html">Contacts</a></li>
+                </ul>
+                <select class="select-menu" style="display: inline-block;">
+                    <option value="#">Navigate to...</option>
+                    <option value="index.html">Home</option>
+                    <option value="">About us</option>
+                    <option value="">––history</option>
+                    <option value="">––news</option>
+                    <option value="">–––latest</option>
+                    <option value="">–––archive</option>
+                    <option value="">––testimonials</option>
+                    <option value="">eye care</option>
+                    <option value="">Eyewear products</option>
+                    <option value="">Contacts</option>
+                </select>
+                <form id="search" class="search" action="search.php" method="GET" accept-charset="utf-8">
+                    <input type="text" name="s" value="" onfocus="if (this.value == '') {this.value=''}" onblur="if (this.value == '') {this.value=''}">
+                    <a href="#" onclick="document.getElementById('search').submit()"><img src="img/magnify.png" alt=""></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="camera_wrap" style="display: block; margin-bottom: 19px; height: 673px;">
+            <div class="camera_fakehover">
+                <div class="camera_src camerastarted">
+                    <div data-src="img/picture1.jpg"></div>
+                    <div data-src="img/picture2.jpg"></div>
+                    <div data-src="img/picture3.jpg"></div>
+                </div>
+                <div class="camera_target">
+                    <div class="cameraCont">
+                        <div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none; z-index: 1;"><img src="img/picture1.jpg?1469174810870" class="imgLoaded" data-alignment="" data-portrait="" width="1600" height="566" style="visibility: visible; height: 673.186px; margin-left: 0px; margin-top: 0px; position: absolute; width: 1903px;">
+                            <div class="camerarelative" style="width: 1903px; height: 673px;"></div>
+                        </div>
+                        <div class="cameraSlide cameraSlide_1 cameracurrent" style="display: block; z-index: 999;"><img src="img/picture2.jpg?1469174812269" class="imgLoaded" data-alignment="" data-portrait="" width="1600" height="566" style="visibility: visible; height: 673.186px; margin-top: 0px; position: absolute; margin-left: 0px; width: 1903px;">
+                            <div class="camerarelative" style="width: 1903px; height: 673px;"></div>
+                        </div>
+                        <div class="cameraSlide cameraSlide_2 cameranext" style="display: none; z-index: 1;"><img src="img/picture3.jpg?1469174820947" class="imgLoaded" data-alignment="" data-portrait="" width="1600" height="566" style="visibility: visible; height: 673.186px; margin-left: 0px; margin-top: 0px; position: absolute; width: 1903px;">
+                            <div class="camerarelative" style="width: 1903px; height: 673px;"></div>
+                        </div>
+                        <div class="cameraSlide cameraSlide_3 cameranext" style="z-index: 1; display: none;">
+                            <div class="camerarelative" style="width: 1903px; height: 673px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera_target_content">
+                    <div class="cameraContents">
+                        <div class="cameraContent" style="display: none;">
+                            <div class="camera-caption fadeIn" style="visibility: hidden; opacity: 1;">
+                                <p class="title">Solving</p>
+                                <p class="description">visual problems</p>
                             </div>
-                            <div class="span8">
-                                <nav class="nav nav__primary clearfix">
-                                    <ul id="topnav" class="sf-menu sf-js-enabled">
-                                        <li id="menu-item-2003" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li id="menu-item-2006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                            <a class="sf-with-ul" href=""> About<span class="sf-sub-indicator"> »</span> </a>
-                                            <ul class="sub-menu" style="visibility: hidden; display: none;">
-                                                <li id="menu-item-2007" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                    <a href="">Testimonials</a>
-                                                </li>
-                                                <li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                    <a href="">Archives</a>
-                                                </li>
-                                                <li id="menu-item-2001" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                    <a href="">FAQs</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-2005" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="">eye care</a>
-                                        </li>
-                                        <li id="menu-item-2004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                            <a class="sf-with-ul" href="http://livedemo00.template-help.com/wordpress_48838/portfolio/">eyewear<span class="sf-sub-indicator"> »</span></a>
-                                            <ul class="sub-menu" style="visibility: hidden; display: none;">
-                                                <li id="menu-item-2011" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                    <a href="">eyewear 2</a>
-                                                </li>
-                                                <li id="menu-item-2010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                    <a class="sf-with-ul" href="">eyewear 3<span class="sf-sub-indicator"> »</span></a>
-                                                    <ul class="sub-menu" style="visibility: hidden; display: none;">
-                                                        <li id="menu-item-2020" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                            <a href="">Category 1</a></li>
-                                                        <li id="menu-item-2019" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                            <a href="">Category 2</a>
-                                                        </li>
-                                                        <li id="menu-item-2018" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                            <a href="">Category 3</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                    <a href="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-4/">eyewear 4</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-2002" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="blog.html">Blog</a>
-                                        </li>
-                                        <li id="menu-item-2000" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="">Contacts</a>
-                                        </li>
-                                    </ul>
-                                    <select class="select-menu">
-                                        <option value="#">Navigate to...</option>
-                                        <!--<option value="http://livedemo00.template-help.com/wordpress_48838/" selected="selected">Home</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/about/">About</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/about/testi/">–Testimonials</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/about/archives/">–Archives</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/about/faqs/">–FAQs</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/services/">eye care</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/">eyewear</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-2/">–eyewear 2</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-3/">–eyewear 3</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-3/category-1/">––Category 1</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-3/category-2/">––Category 2</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-3/category-3/">––Category 3</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/portfolio/portfolio-4/">–eyewear 4</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/blog/">Blog</option>
-<option value="http://livedemo00.template-help.com/wordpress_48838/contacts/">Contacts</option>-->
-                                    </select>
-                                </nav>
+                        </div>
+                        <div class="cameraContent cameracurrent" style="display: block;">
+                            <div class="camera-caption fadeIn" style="visibility: visible; opacity: 1;">
+                                <p class="title">We care</p>
+                                <p class="description">about your health!</p>
+                            </div>
+                        </div>
+                        <div class="cameraContent" style="display: none;">
+                            <div class="camera-caption fadeIn" style="visibility: hidden; opacity: 1;">
+                                <p class="title">Make your</p>
+                                <p class="description">natural choice!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div class="content-holder clearfix">
-            <div data-motopress-static-file="static/static-slider.php" data-motopress-type="static">
-                <div id="slider-wrapper" class="slider">
-                    <script type="text/javascript">
-                        //    jQuery(window).load(function() {
-                        jQuery(function () {
-                            var myCamera = jQuery('#camera576cd8b5e5b62');
-                            if (!myCamera.hasClass('motopress-camera')) {
-                                myCamera.addClass('motopress-camera');
-                                myCamera.camera({
-                                    alignment: 'topCenter', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
-                                    autoAdvance: true, //true, false
-                                    mobileAutoAdvance: true, //true, false. Auto-advancing for mobile devices
-                                    barDirection: 'leftToRight', //'leftToRight', 'rightToLeft', 'topToBottom', 'bottomToTop'
-                                    barPosition: 'top', //'bottom', 'left', 'top', 'right'
-                                    cols: 12,
-                                    easing: 'easeOutQuad', //for the complete list http://jqueryui.com/demos/effect/easing.html
-                                    mobileEasing: '', //leave empty if you want to display the same easing on mobile devices and on desktop etc.
-                                    fx: "simpleFade", //'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft',          'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
-                                    //you can also use more than one effect, just separate them with commas: 'simpleFade, scrollRight, scrollBottom'
-                                    mobileFx: '', //leave empty if you want to display the same effect on mobile devices and on desktop etc.
-                                    gridDifference: 250, //to make the grid blocks slower than the slices, this value must be smaller than transPeriod
-                                    height: '34.25%', //here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
-                                    imagePath: 'images/', //he path to the image folder (it serves for the blank.gif, when you want to display videos)
-                                    loader: "no", //pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
-                                    loaderColor: '#ffffff',
-                                    loaderBgColor: '#eb8a7c',
-                                    loaderOpacity: 1, //0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
-                                    loaderPadding: 0, //how many empty pixels you want to display between the loader and its background
-                                    loaderStroke: 3, //the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
-                                    minHeight: '147px', //you can also leave it blank
-                                    navigation: false, //true or false, to display or not the navigation buttons
-                                    navigationHover: false, //if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always
-                                    pagination: false,
-                                    playPause: false, //true or false, to display or not the play/pause buttons
-                                    pieDiameter: 33,
-                                    piePosition: 'rightTop', //'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
-                                    portrait: true, //true, false. Select true if you don't want that your images are cropped
-                                    rows: 8,
-                                    slicedCols: 12,
-                                    slicedRows: 8,
-                                    thumbnails: false,
-                                    time: 7000, //milliseconds between the end of the sliding effect and the start of the next one
-                                    transPeriod: 1500, //lenght of the sliding effect in milliseconds
-                                    ////////callbacks
-                                    onEndTransition: function () {}, //this callback is invoked when the transition effect ends
-                                    onLoaded: function () {}, //this callback is invoked when the image on a slide has completely loaded
-                                    onStartLoading: function () {}, //this callback is invoked when the image on a slide start loading
-                                    onStartTransition: function () {} //this callback is invoked when the transition effect starts
-                                });
-                            }
-                        });
-                    </script>
-                    <div id="camera576cd8b5e5b62" class="camera_wrap camera motopress-camera" style="display: block; height: 652px;">
-                        <div class="camera_fakehover">
-                            <div class="camera_src camerastarted">
-                                <div data-thumb="images/slide1-100x50.jpg" data-src="images/slide1.jpg"> </div>
-                                <div data-thumb="images/slide2-100x50.jpg" data-src="images/slide2.jpg"> </div>
-                                <div data-thumb="images/slide3-100x50.jpg" data-src="images/slide3.jpg"> </div>
-                            </div>
-                            <div class="camera_target">
-                                <div class="cameraCont">
-                                    <div class="cameraSlide cameraSlide_0 cameracurrent" style="visibility: visible; display: block; z-index: 999;">
-                                        <img class="imgLoaded" width="1600" height="548" src="images/slide1.jpg?1468410263522" style="visibility: visible; height: 651.778px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; width: 1903px;" data-alignment="" data-portrait="">
-                                        <div class="camerarelative" style="width: 1903px; height: 652px;"></div>
-                                    </div>
-                                    <div class="cameraSlide cameraSlide_1 cameranext" style="display: none; z-index: 1;">
-                                        <img class="imgLoaded" width="1600" height="548" src="images/slide2.jpg?1468410264906" style="visibility: visible; height: 651.778px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; width: 1903px;" data-alignment="" data-portrait="">
-                                        <div class="camerarelative" style="width: 1903px; height: 652px;"></div>
-                                    </div>
-                                    <div class="cameraSlide cameraSlide_2" style="display: none; z-index: 1;">
-                                        <img class="imgLoaded" width="1600" height="548" src="images/slide3.jpg?1468410275465" style="visibility: visible; height: 651.778px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; width: 1903px;" data-alignment="" data-portrait="">
-                                        <div class="camerarelative" style="width: 1903px; height: 652px;"></div>
-                                    </div>
-                                    <div class="cameraSlide cameraSlide_3 cameranext" style="z-index: 1; display: none;">
-                                        <div class="camerarelative" style="width: 1903px; height: 652px;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="camera_overlayer"></div>
-                            <div class="camera_target_content">
-                                <div class="cameraContents">
-                                    <div class="cameraContent" style="display: none;">
-                                        <div class="camera_caption fadeFromBottom" style="visibility: visible; opacity: 1; bottom: 0px;">
-                                            <div>
-                                                <h1>lorem</h1>
-                                                <h2>Sed perspiciatis<br>unde omnis istem</h2>
-                                                <p>
-                                                    Phasellus porta. Fusce susct varius mi. Cum sociis natoque penabus et magnis dis parturient
-                                                    <br> montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.
-                                                </p>
-                                                <a class="btn" href="uncategorized/dipisicing-elit-sed-do-eiusmod/">Click Here!</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cameraContent" style="display: none;">
-                                        <div class="camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;">
-                                            <div>
-                                                <h1>Praesent</h1>
-                                                <h2>enim adminima<br>veniam quis</h2>
-                                                <p>
-                                                    Phasellus porta. Fusce susct varius mi. Cum sociis natoque penabus et magnis dis parturient
-                                                    <br> montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.
-                                                </p>
-                                                <a class="btn" href="parturient-montes-nascetur-ridiculus/fusce-susct-varius-mi/">Click Here!</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="cameraContent cameracurrent" style="display: block;">
-                                        <div class="camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;">
-                                            <div>
-                                                <h1>Phasel </h1>
-                                                <h2>
-eror sit voluptatem
-<br>
-accusant
-</h2>
-                                                <p>
-                                                    Phasellus porta. Fusce susct varius mi. Cum sociis natoque penabus et magnis dis parturient
-                                                    <br> montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.
-                                                </p>
-                                                <a class="btn" href="parturient-montes-nascetur-ridiculus/nulla-dui-massa-dolore/">Click Here!</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="camera_bar" style="display: none; bottom: auto; height: 3px;">
-                                <span class="camera_bar_cont" style="opacity: 1; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(235, 138, 124);">
-<span id="pie_1" style="opacity: 1; position: absolute; background-color: rgb(255, 255, 255); left: 0px; right: 0px; top: 0px; bottom: 0px; display: block;"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="camera_loader" style="display: none; visibility: visible;"></div>
-                    </div>
+                <div class="camera_bar" style="display: none; top: auto; height: 7px;"><span class="camera_bar_cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(34, 34, 34);"><span id="pie_0" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 2px; bottom: 2px; display: block; background-color: rgb(238, 238, 238);"></span></span>
                 </div>
             </div>
+            <div class="camera_pag">
+                <ul class="camera_pag_ul">
+                    <li class="pag_nav_0" style="position:relative; z-index:1002"><span><span>0</span></span>
+                    </li>
+                    <li class="pag_nav_1 cameracurrent" style="position:relative; z-index:1002"><span><span>1</span></span>
+                    </li>
+                    <li class="pag_nav_2" style="position:relative; z-index:1002"><span><span>2</span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="camera_loader" style="display: none; visibility: visible;"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="thumb-box1">
             <div class="container">
                 <div class="row">
-                    <div class="span12">
-                        <div class="row">
-                            <div class="span12">
-                                <div id="post-203" class="post-203 page type-page status-publish hentry page">
-                                    <div class="row">
-                                        <div class="span12">
-                                            <div class="content_plane type2">
-                                                <h1 style="text-align: center;">Welcome to us! Lorem ipsum dolor amet<br><small>Sed ut perspiciatis unde</small></h1>
-                                                <p style="text-align: center;">
-                                                    <a class="btn btn-default btn-normal btn-inline " target="_self" title="Join us!" href="about/">Join us!</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="span12">
-                                            <h2 style="text-align: center;">What We Offer</h2>
-                                        </div>
-                                        <div class="span4">
-                                            <figure class="alignleft up">
-                                                <img alt="" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/iconSweets/icon_1.png">
-                                            </figure>
-                                            <div class="extra-wrap">
-                                                <h4>Lorem ipsum</h4>
-                                                <p>Dipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliquaenim ad minim veniam, quis nostrud exercitatio.</p>
-                                                <a class="btn btn-default btn-normal btn-inline " target="_self" title="More" href="parturient-montes-nascetur-ridiculus/nulla-dui-massa-dolore/">More</a>
-                                            </div>
-                                            <div class="spacer"></div>
-                                        </div>
-                                        <div class="span4">
-                                            <figure class="alignleft up">
-                                                <img alt="" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/iconSweets/icon_2.png">
-                                            </figure>
-                                            <div class="extra-wrap">
-                                                <h4>Quisque nulla</h4>
-                                                <p>Dipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliquaenim ad minim veniam, quis nostrud exercitatio.</p>
-                                                <a class="btn btn-default btn-normal btn-inline " target="_self" title="More" href="natoque-penabus-et-magnis/phasellus-fringilla/">More</a>
-                                            </div>
-                                            <div class="spacer"></div>
-                                        </div>
-                                        <div class="span4">
-                                            <figure class="alignleft up">
-                                                <img alt="" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/iconSweets/icon_3.png">
-                                            </figure>
-                                            <div class="extra-wrap">
-                                                <h4>Aenean nonum</h4>
-                                                <p>Dipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliquaenim ad minim veniam, quis nostrud exercitatio.</p>
-                                                <a class="btn btn-default btn-normal btn-inline " target="_self" title="More" href="natoque-penabus-et-magnis/vivamus-vel-sem-at/">More</a>
-                                            </div>
-                                            <div class="spacer"></div>
-                                        </div>
-                                        <div class="span12">
-                                            <div class="hr"></div>
-                                            <h2 style="text-align: center;">We work for your health!</h2>
-                                            <ul class="recent-posts two-col unstyled">
-                                                <li class="recent-posts_li post-1987 services type-services status-publish hentry">
-                                                    <div class="extra-wrap">
-                                                        <figure class="thumbnail featured-thumbnail">
-                                                            <a title="lorem ipsum dolore" href="http://livedemo00.template-help.com/wordpress_48838/services-view/lorem-ipsum-dolore/">
-                                                                <img alt="lorem ipsum dolore" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_10767614_original-258x173.jpg">
-                                                            </a>
-                                                        </figure>
-                                                        <h5>
-<a title="lorem ipsum dolore" href="http://livedemo00.template-help.com/wordpress_48838/services-view/lorem-ipsum-dolore/">lorem ipsum dolore</a>
-<div class="subtitle">massa laoreetum</div>
-</h5>
-                                                        <div class="excerpt">Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu. Cras vitae neque turpis, in luctus risus. Donec et placerat orci. Praesent pulvinar lectus... </div>
-                                                    </div>
-                                                    <a class="btn btn-primary" title="lorem ipsum dolore" href="http://livedemo00.template-help.com/wordpress_48838/services-view/lorem-ipsum-dolore/">More</a>
-                                                    <div class="clear"></div>
-                                                </li>
-                                                <li class="recent-posts_li post-1988 services type-services status-publish hentry">
-                                                    <div class="extra-wrap">
-                                                        <figure class="thumbnail featured-thumbnail">
-                                                            <a title="Nulla doi odio" href="http://livedemo00.template-help.com/wordpress_48838/services-view/nulla-doi-odio/">
-                                                                <img alt="Nulla doi odio" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_8275490_original-258x173.jpg">
-                                                            </a>
-                                                        </figure>
-                                                        <h5>
-<a title="Nulla doi odio" href="http://livedemo00.template-help.com/wordpress_48838/services-view/nulla-doi-odio/">Nulla doi odio</a>
-<div class="subtitle">Gum solie consectetuer</div>
-</h5>
-                                                        <div class="excerpt">Arenean nonummy hendrerit mau phaselntes nascetur ridic ulusm dui fusce feu. Cras vitae neque turpis, in luctus risus. Donec et placerat orci. Praesent pulvinar lectus... </div>
-                                                    </div>
-                                                    <a class="btn btn-primary" title="Nulla doi odio" href="http://livedemo00.template-help.com/wordpress_48838/services-view/nulla-doi-odio/">More</a>
-                                                    <div class="clear"></div>
-                                                </li>
-                                            </ul>
-                                            <div class="spacer"></div>
-                                        </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="thumb-pad1 maxheight" style="height: 346px;">
+                            <div class="box_inner">
+                                <div class="thumbnail">
+                                    <figure><img src="img/page1_icon1.png" alt=""></figure>
+                                    <div class="caption">
+                                        <p class="title">Lorem
+                                            <br>dolor sit amet</p>
+                                        <p>Dio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti. atque corrupti quos dolores et.</p>
+                                        <a href="#" class="btn-default btn1">more <i></i></a>
                                     </div>
-                                    <!-- end row-->
-                                    <div class="row">
-                                        <div class="content_plane ">
-                                            <div class="span4">
-                                                <h3>Latest Posts</h3>
-                                                <ul class="recent-posts unstyled">
-                                                    <li class="recent-posts_li post-71 post type-post status-publish format-standard hentry category-uncategorized cat-1-id">
-                                                        <div class="extra-wrap">
-                                                            <figure class="thumbnail featured-thumbnail">
-                                                                <a title="Dipisicing elit sed do eiusmod" href="http://livedemo00.template-help.com/wordpress_48838/uncategorized/dipisicing-elit-sed-do-eiusmod/">
-                                                                    <img alt="Dipisicing elit sed do eiusmod" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_3293880_original_01-64x64.jpg">
-                                                                </a>
-                                                            </figure>
-                                                            <h5>
-                                                                <a title="Dipisicing elit sed do eiusmod" href="http://livedemo00.template-help.com/wordpress_48838/uncategorized/dipisicing-elit-sed-do-eiusmod/">Dipisicing elit sed do eiusmod</a>
-                                                            </h5>
-                                                            <span class="meta">
-                                                                <span class="post-date">March 14, 2013</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </li>
-                                                    <li class="recent-posts_li post-77 post type-post status-publish format-standard hentry category-parturient-montes-nascetur-ridiculus cat-4-id">
-                                                        <div class="extra-wrap">
-                                                            <figure class="thumbnail featured-thumbnail">
-                                                                <a title="Fusce susct varius mi" href="http://livedemo00.template-help.com/wordpress_48838/parturient-montes-nascetur-ridiculus/fusce-susct-varius-mi/">
-                                                                    <img alt="Fusce susct varius mi" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_1147111_original_03-64x64.jpg">
-                                                                </a>
-                                                            </figure>
-                                                            <h5>
-<a title="Fusce susct varius mi" href="http://livedemo00.template-help.com/wordpress_48838/parturient-montes-nascetur-ridiculus/fusce-susct-varius-mi/">Fusce susct varius mi</a>
-</h5>
-                                                            <span class="meta">
-<span class="post-date">March 5, 2013</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </li>
-                                                    <li class="recent-posts_li post-67 post type-post status-publish format-standard hentry category-parturient-montes-nascetur-ridiculus cat-4-id">
-                                                        <div class="extra-wrap">
-                                                            <figure class="thumbnail featured-thumbnail">
-                                                                <a title="Nulla dui massa dolore" href="http://livedemo00.template-help.com/wordpress_48838/parturient-montes-nascetur-ridiculus/nulla-dui-massa-dolore/">
-                                                                    <img alt="Nulla dui massa dolore" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_3297567_original_03-64x64.jpg">
-                                                                </a>
-                                                            </figure>
-                                                            <h5>
-<a title="Nulla dui massa dolore" href="http://livedemo00.template-help.com/wordpress_48838/parturient-montes-nascetur-ridiculus/nulla-dui-massa-dolore/">Nulla dui massa dolore</a>
-</h5>
-                                                            <span class="meta">
-<span class="post-date">February 14, 2013</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </li>
-                                                </ul>
-                                                <div class="spacer"></div>
-                                            </div>
-                                            <div class="span4">
-                                                <h3>Why Choose Us</h3>
-                                                <div id="id-1733832833" class="accordion">
-                                                    <div class="accordion-group">
-                                                        <div class="accordion-heading">
-                                                            <a class="accordion-toggle active" href="#1266162106" data-parent="#id-1733832833" data-toggle="collapse">Lorem ipsum dolor</a>
-                                                        </div>
-                                                        <div id="1266162106" class="accordion-body collapse in">
-                                                            <div class="accordion-inner">
-                                                                <p>Phasellus porta. Fusce susct varius mi. Cum sociis natoque penabus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui massa dolore sed lorem.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-group">
-                                                        <div class="accordion-heading">
-                                                            <a class="accordion-toggle " href="#187980302" data-parent="#id-1733832833" data-toggle="collapse">Praesent vestibulum</a>
-                                                        </div>
-                                                        <div id="187980302" class="accordion-body collapse ">
-                                                            <div class="accordion-inner">
-                                                                <p>Dipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliquaenim ad minim veniam, quis nostrud exercitation des ullamco.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-group">
-                                                        <div class="accordion-heading">
-                                                            <a class="accordion-toggle " href="#1694280013" data-parent="#id-1733832833" data-toggle="collapse">Vestibulum iaculis</a>
-                                                        </div>
-                                                        <div id="1694280013" class="accordion-body collapse ">
-                                                            <div class="accordion-inner">
-                                                                <p>Cum sociis natoque penabus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus porta. Fusce susct varius mi. Nulla dui massa dolore sed lorem.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="spacer"></div>
-                                            </div>
-                                            <div class="span4">
-                                                <h3>Testimonials</h3>
-                                                <div class="testimonials ">
-                                                    <div class="testi-item">
-                                                        <blockquote class="testi-item_blockquote">
-                                                            <a href="http://livedemo00.template-help.com/wordpress_48838/testimonial-view/testimonial-3/">"Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.... "</a>
-                                                            <div class="clear"></div>
-                                                        </blockquote>
-                                                        <figure class="featured-thumbnail">
-                                                            <img alt="" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/uploads/2014/04/Depositphotos_3296384_original_03_103-280x240.jpg">
-                                                        </figure>
-                                                        <small class="testi-meta">
-<div class="user">Alex Greenbaum</div>
-<div class="info">USA. Detroit</div>
-</small>
-                                                    </div>
-                                                </div>
-                                                <div class="spacer"></div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="thumb-pad1 maxheight" style="height: 346px;">
+                            <div class="box_inner">
+                                <div class="thumbnail">
+                                    <figure><img src="img/page1_icon2.png" alt=""></figure>
+                                    <div class="caption">
+                                        <p class="title">Eiusmod
+                                            <br>tempor</p>
+                                        <p>Wolore ducimus qui blanditiis praesentium vo tatum deleniti atque. corrupti quos dolores. </p>
+                                        <a href="#" class="btn-default btn1">more <i></i></a>
                                     </div>
-                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="thumb-pad1 maxheight" style="height: 346px;">
+                            <div class="box_inner">
+                                <div class="thumbnail">
+                                    <figure><img src="img/page1_icon3.png" alt=""></figure>
+                                    <div class="caption">
+                                        <p class="title">Ncididunt
+                                            <br>ute labore</p>
+                                        <p>Sucimus qui blanditiis praesentium voluptatuatque corrupti quos dolores etquas molestias excepturi.</p>
+                                        <a href="#" class="btn-default btn1">more <i></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="thumb-pad1 maxheight" style="height: 346px;">
+                            <div class="box_inner">
+                                <div class="thumbnail">
+                                    <figure><img src="img/page1_icon4.png" alt=""></figure>
+                                    <div class="caption">
+                                        <p class="title">Et harum
+                                            <br>quidem</p>
+                                        <p>Ecusamus et iusto odio dignissimos ducimus qui blanpraesentium voluptatum corrupti quos dolor.</p>
+                                        <a href="#" class="btn-default btn1">more <i></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -475,164 +201,371 @@ accusant
                 </div>
             </div>
         </div>
-        <footer class="motopress-wrapper footer">
+        <div class="thumb-box3">
+            <div class="container">
+                <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Welcome To Our Website!<span>Duis aute irure dolor in reprehenderit in.</span></h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="thumb-pad2">
+                            <div class="thumbnail">
+                                <figure><img src="img/page1_pic1.jpg" alt=""></figure>
+                                <div class="caption">
+                                    <p class="title">Michael Flanaghan</p>
+                                    <p class="description">optometrist</p>
+                                    <hr>
+                                    <p>At vero eos et accusamus et iusto odio dignis
+                                        <br>simos ducimus qui blanditiis praesentium.</p>
+                                    <a href="#" class="btn-default btn3">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="thumb-pad2">
+                            <div class="thumbnail">
+                                <figure><img src="img/page1_pic2.jpg" alt=""></figure>
+                                <div class="caption">
+                                    <p class="title">Alex Holbern</p>
+                                    <p class="description">optometrist</p>
+                                    <hr>
+                                    <p>At vero eos et accusamus et iusto odio dignis
+                                        <br>simos ducimus qui blanditiis praesentium.</p>
+                                    <a href="#" class="btn-default btn3">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h3>Pellentesque ultrices quam dui, et consequat justo pharetra ac.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="_accodList">
+                            <li>
+                                <strong class="color1 color2"><span></span>Et harum quidem rerum facilis</strong>
+                                <p style="display: block;">Temporibus autem quibusdam et aut offiis debitis aut rerum necessitatibus saepe.</p>
+                            </li>
+                            <li>
+                                <strong class="color1"><span></span>At vero eos et accusamus et iusto</strong>
+                                <p style="display: none;">Temporibus autem quibusdam et aut offiis debitis aut rerum necessitatibus saepe.</p>
+                            </li>
+                            <li>
+                                <strong class="color1"><span></span>Sed ut perspiciatis unde omnis</strong>
+                                <p style="display: none;">Temporibus autem quibusdam et aut offiis debitis aut rerum necessitatibus saepe.</p>
+                            </li>
+                            <li>
+                                <strong class="color1"><span></span>Ut enim ad minima veniam</strong>
+                                <p style="display: none;">Temporibus autem quibusdam et aut offiis debitis aut rerum necessitatibus saepe.</p>
+                            </li>
+                            <li>
+                                <strong class="color1"><span></span>Nemo enim ipsam voluptatem quia</strong>
+                                <p style="display: none;">Temporibus autem quibusdam et aut offiis debitis aut rerum necessitatibus saepe.</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-default btn4">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumb-box4">
             <div class="container">
                 <div class="row">
-                    <div class="span12" data-motopress-id="576cd8b65f813" data-motopress-wrapper-type="footer" data-motopress-wrapper-file="wrapper/wrapper-footer.php">
-                        <div class="row footer-widgets">
-                            <div class="span2" data-motopress-sidebar-id="footer-sidebar-1" data-motopress-type="dynamic-sidebar">
-                                <div id="text-5" class="visible-all-devices list arrow-list ">
-                                    <h5>clinic</h5>
-                                    <div class="textwidget">
-                                        <ul>
-                                            <li>
-                                                <a href="#">nostrum</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">dictum</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">exercitationem</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">corporis</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">voluptatem</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <h4><img src="img/title_icon1.png" alt="">Our Mission</h4>
+                        <h5>Quis autem vel eum iure reprehenderit.</h5>
+                        <p>Dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                        <a href="#" class="btn-default btn1">more <i></i></a>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-lg-offset-1 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h4><img src="img/title_icon2.png" alt="">consultation</h4>
+                        <h5>Ut enim ad minim veniam.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        <a href="#" class="btn-default btn1">more <i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumb-box5">
+            <div class="container">
+                <h4 class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">quick Contact</h4>
+                <div class="contactForm2">
+                    <form id="contact-form" method="POST" action="bat/MailHandler.php">
+                        <div class="contact-form-loader"></div>
+                        <div class="row">
+                            <fieldset>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <label class="message form-div-4">
+                                        <textarea name="message" data-constraints="@Required @Length(min=20,max=999999)" id="regula-generated-583410"></textarea>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*The message is too short.</span>
+                                        <span class="_placeholder" style="left: 0px; top: 0px; width: 512px; height: 189px;">Your Message</span></label>
                                 </div>
-                            </div>
-                            <div class="span2" data-motopress-sidebar-id="footer-sidebar-2" data-motopress-type="dynamic-sidebar">
-                                <div id="text-6" class="visible-all-devices list arrow-list ">
-                                    <h5>overview</h5>
-                                    <div class="textwidget">
-                                        <ul>
-                                            <li>
-                                                <a href="#">perspiciatis</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">lorem</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">ipsum dolor</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="span2" data-motopress-sidebar-id="footer-sidebar-3" data-motopress-type="dynamic-sidebar">
-                                <div id="text-8" class="visible-all-devices list arrow-list ">
-                                    <h5>for patients</h5>
-                                    <div class="textwidget">
-                                        <ul>
-                                            <li>
-                                                <a href="#">minima</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">suscipit</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">laboriosam</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">euismod</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="span3" data-motopress-sidebar-id="footer-sidebar-4" data-motopress-type="dynamic-sidebar">
-                                <div id="nav_menu-2" class="">
-                                    <h5>navigation</h5>
-                                    <div class="menu-footer-menu-container">
-                                        <ul id="menu-footer-menu" class="menu">
-                                            <li id="menu-item-2012" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item menu-item-2012">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/">Home</a>
-                                            </li>
-                                            <li id="menu-item-2017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/about/">About</a>
-                                            </li>
-                                            <li id="menu-item-2016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2016">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/services/">eye care</a>
-                                            </li>
-                                            <li id="menu-item-2015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2015">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/portfolio/">eyewear</a>
-                                            </li>
-                                            <li id="menu-item-2013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2013">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/blog/">Blog</a>
-                                            </li>
-                                            <li id="menu-item-2014" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2014">
-                                                <a href="http://livedemo00.template-help.com/wordpress_48838/contacts/">Contacts</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="span3 copyright" data-motopress-static-file="static/static-footer-text.php" data-motopress-type="static">
-                                <div class="footer-sidebar-5" data-motopress-sidebar-id="footer-sidebar-5" data-motopress-type="dynamic-sidebar">
-                                    <div id="text-9" class="">
-                                        <div class="textwidget">
-                                            <i class="icon-home"></i>
-                                            <div class="extra-wrap">
-                                                9870 St Vincent Place,
-                                                <br> Glasgow, DC 45 Fr 45.
-                                            </div>
-                                            <br>
-                                            <i class="icon-phone-sign"></i>
-                                            <div class="extra-wrap">
-                                                Telephone: +1 800 603 6035
-                                                <br> FAX: +1 800 889 9898
-                                            </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="box">
+                                        <label class="name form-div-1">
+                                            <input type="text" name="name" value="" data-constraints="@Required @JustLetters" id="regula-generated-600224">
+                                            <span class="empty-message">*This field is required.</span>
+                                            <span class="error-message">*This is not a valid name.</span>
+                                            <span class="_placeholder" style="left: 0px; top: 0px; width: 512px; height: 48px;">Your Name</span></label>
+                                        <label class="email form-div-2">
+                                            <input type="text" name="email" value="" data-constraints="@Required @Email" id="regula-generated-480674">
+                                            <span class="empty-message">*This field is required.</span>
+                                            <span class="error-message">*This is not a valid email.</span>
+                                            <span class="_placeholder" style="left: 0px; top: 0px; width: 512px; height: 48px;">Your Email</span></label>
+                                        <div class="btns">
+                                            <a href="#" data-type="submit" class="btn-default btn3">Submit the form</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="footer-logo" data-motopress-static-file="static/static-footer-logo.php" data-motopress-type="static">
-                                    <a href="http://livedemo00.template-help.com/wordpress_48838/">
-                                        <img alt="" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/footer_logo.png">
-                                    </a>
-                                </div>
-                                <div id="footer-text" class="footer-text">
-                                    © 2016 |
-                                    <a title="Privacy Policy" href="http://livedemo00.template-help.com/wordpress_48838/privacy-policy/">Privacy Policy</a>
-                                </div>
-                                <div class="social-nets-wrapper" data-motopress-static-file="static/static-social-networks.php" data-motopress-type="static">
-                                    <ul class="social">
-                                        <li>
-                                            <a title="twitter" href="#">
-                                                <img alt="twitter" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/social/twitter.png">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="facebook" href="#">
-                                                <img alt="facebook" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/social/facebook.png">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="rss" href="#">
-                                                <img alt="rss" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/social/rss.png">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a title="google" href="#">
-                                                <img alt="google" src="http://livedemo00.template-help.com/wordpress_48838/wp-content/themes/theme48838/images/social/google.png">
-                                            </a>
-                                        </li>
-                                    </ul>
+                            </fieldset>
+                        </div>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="false">×</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="row footer-nav-holder">
-                            <div class="span12" data-motopress-static-file="static/static-footer-nav.php" data-motopress-type="static">
+                        <input type="hidden" name="stripHTML" value="true">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content_map2">
+        <div class="google-map-api">
+            <div id="map-canvas" class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);">
+                <div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;">
+                    <div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;">
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, -155, 0);">
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                    <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 323px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 323px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 67px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 67px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 579px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 579px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 835px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 835px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1091px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1091px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1347px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1347px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1603px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1603px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1859px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1859px; top: 142px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                    <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 323px; top: -114px;">
+                                            <canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas>
+                                        </div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 323px; top: 142px;">
+                                            <canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas>
+                                        </div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 67px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 67px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 579px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 579px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 835px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 835px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1091px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1091px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1347px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1347px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1603px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1603px; top: 142px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1859px; top: -114px;"></div>
+                                        <div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1859px; top: 142px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                    <div style="transform: translateZ(0px); position: absolute; left: 323px; top: -114px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4824!3i6163!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=16808" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 323px; top: 142px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4824!3i6164!4i256!2m3!1e0!2sm!3i355027121!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=80036" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 67px; top: 142px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4823!3i6164!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=82619" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 67px; top: -114px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4823!3i6163!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=12068" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 579px; top: -114px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4825!3i6163!4i256!2m3!1e0!2sm!3i355027121!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=14225" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 579px; top: 142px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4825!3i6164!4i256!2m3!1e0!2sm!3i355027121!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=84776" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 835px; top: -114px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4826!3i6163!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=108736" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 835px; top: 142px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4826!3i6164!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=48216" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1091px; top: -114px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4827!3i6163!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=113476" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1091px; top: 142px;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4827!3i6164!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=52956" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1347px; top: -114px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4828!3i6163!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=118216" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1347px; top: 142px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4828!3i6164!4i256!2m3!1e0!2sm!3i355027289!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=57696" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1603px; top: -114px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4829!3i6163!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=40508" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1603px; top: 142px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4829!3i6164!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=111059" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1859px; top: -114px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4830!3i6163!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=66906" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                    <div style="transform: translateZ(0px); position: absolute; left: 1859px; top: 142px; transition: opacity 200ms ease-out;"><img src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i4830!3i6164!4i256!2m3!1e0!2sm!3i355027254!3m14!2sru-RU!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6NXxzLmU6Z3xwLmM6I2ZmZjRmN2Y5LHMudDo0OXxzLmU6Zy5mfHAuYzojZmZhN2MxZDMscy50OjQ5fHMuZTpnLnN8cC5jOiNmZjhmYWZjN3xwLnc6MSxzLnQ6NTB8cy5lOmd8cC5jOiNmZmUzZWNmMXxwLnc6MixzLnQ6NTB8cy5lOmcuc3xwLmM6I2ZmZDhlM2VjfHAudzoxLHMudDo1MXxzLmU6Z3xwLmM6I2ZmZmZmZmZmfHAudzoxLHMudDoyfHMuZTpnfHAuYzojZmZkN2UyZWIscy5lOmwudC5zfHAudjpvbnxwLmM6I2ZmZTFlYWYwLHMuZTpsLnQuZnxwLnM6MzZ8cC5jOiNmZjI0MmUzNSxzLmU6bC5pfHAudjpvZmYscy50OjR8cy5lOmd8cC5jOiNmZmQwZGVlOCxzLnQ6MXxzLmU6Zy5mfHAuYzojZmZmZjAwMDAscy50OjF8cy5lOmcuc3xwLmM6I2ZmZDBkZWU4fHAudzoxLjI!4e0&amp;token=6386" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;">
+                            <p class="gm-style-pbt">Чтобы переместить карту, коснитесь ее двумя пальцами</p>
+                        </div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div>
+                        <div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, -155, 0);">
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+                            <div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                        <a target="_blank" href="https://maps.google.com/maps?ll=40.646197,-73.936615&amp;z=14&amp;t=m&amp;hl=ru-RU&amp;gl=US&amp;mapclient=apiv3" title="Нажмите, чтобы отобразить эту область в Картах Google" style="position: static; overflow: visible; float: none; display: inline;">
+                            <div style="width: 66px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                        </a>
+                    </div>
+                    <div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 802px; top: 69px; background-color: white;">
+                        <div style="padding: 0px 0px 10px; font-size: 16px;">Картографические данные</div>
+                        <div style="font-size: 13px;">Картографические данные © 2016 Google</div>
+                        <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                    </div>
+                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 280px; bottom: 0px; width: 208px;">
+                        <div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;">
+                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                <div style="width: 1px;"></div>
+                                <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                            </div>
+                            <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Картографические данные</a><span style="">Картографические данные © 2016 Google</span></div>
+                        </div>
+                    </div>
+                    <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                        <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Картографические данные © 2016 Google</div>
+                    </div>
+                    <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 153px; bottom: 0px;">
+                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                            <div style="width: 1px;"></div>
+                            <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                        </div>
+                        <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/ru-RU_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Условия использования</a></div>
+                    </div>
+                    <div style="display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"></div>
+                    <div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                            <div style="width: 1px;"></div>
+                            <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                        </div>
+                        <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Сообщить об ошибке на карте или снимке" href="https://www.google.com/maps/@40.646197,-73.9366154,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Сообщить об ошибке на карте</a></div>
+                    </div>
+                    <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 107px; right: 28px;">
+                        <div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;">
+                            <div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);">
+                                <div title="Увеличить" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;">
+                                    <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div>
+                                </div>
+                                <div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div>
+                                <div title="Уменьшить" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;">
+                                    <div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gm-svpc" controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+                            <div style="position: absolute; left: 1px; top: 1px;"></div>
+                            <div style="position: absolute; left: 1px; top: 1px;">
+                                <div aria-label="Перейти в режим просмотра улиц" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                <div aria-label="Человечек находится над картой" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                <div aria-label="Перейти в режим просмотра улиц" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                            </div>
+                        </div>
+                        <div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;">
+                            <div title="Повернуть карту на 90&nbsp;градусов" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                            <div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                        </div>
+                    </div>
+                    <div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;">
+                        <div class="gm-style-mtc" style="float: left;">
+                            <div draggable="false" title="Показать карту с названиями объектов" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 30px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Карта</div>
+                            <div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 31px; text-align: left; display: none; background-color: white;">
+                                <div draggable="false" title="Показать карту рельефа с названиями объектов" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span>
+                                    <label style="vertical-align: middle; cursor: pointer;">Рельеф</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gm-style-mtc" style="float: left;">
+                            <div draggable="false" title="Показать спутниковую карту" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 43px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Спутник</div>
+                            <div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 31px; text-align: left; display: none; background-color: white;">
+                                <div draggable="false" title="Показать спутниковую карту с названиями объектов" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span>
+                                    <label style="vertical-align: middle; cursor: pointer;">Названия объектов</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <p class="title">Copyright</p>
+                    <p class="name">Holbern</p>
+                    <p class="prev">© <em id="copyright-year">2016</em> <a href="index-5.html">Privacy Policy</a></p>
+                    <ul class="follow_icon2">
+                        <li>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-google-plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-rss"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-pinterest"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <p class="title">About Us</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquiex modo consequat.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <p class="title">Contact Us</p>
+                    <ul class="list1">
+                        <li>
+                            <figure><img src="img/foo_icon1.png" alt=""></figure>
+                            <div class="extra-wrap">
+                                <p>Freephone: +1 800 559 6580</p>
+                            </div>
+                        </li>
+                        <li>
+                            <figure><img src="img/foo_icon2.png" alt=""></figure>
+                            <div class="extra-wrap">
+                                <a href="#">contact@demolink.org</a>
+                            </div>
+                        </li>
+                        <li>
+                            <figure><img src="img/foo_icon3.png" alt=""></figure>
+                            <div class="extra-wrap">
+                                <p>9870 St Vincent Place,
+                                    <br>Los Angeles, DC 45 Fr 45.
+                                    <br>United States of America</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- {%FOOTER_LINK} -->
+    </footer>
 
 </body>
 
